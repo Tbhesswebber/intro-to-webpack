@@ -1,0 +1,11 @@
+{
+  "name": "intro-to-webpack",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "next": "git checkout 1/code"
+  },
+  "author": "Tanner B. Hess Webber <tb@hesswebber.com>",
+  "license": "MIT"
+}
