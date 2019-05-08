@@ -1,11 +1,33 @@
 {
   "name": "intro-to-webpack",
-  "version": "0.0.1",
+  "version": "4.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "next": "git checkout 1/code"
+    "build": "webpack --env.mode production",
+    "build:dev": "webpack-dev-server --env.mode development --open",
+    "next": "git checkout 10/code",
+    "this": "git checkout 9/solution",
+    "prev": "git checkout 8/code"
   },
   "author": "Tanner B. Hess Webber <tb@hesswebber.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "~7.4.4",
+    "@babel/preset-react": "~7.0.0",
+    "babel-loader": "~8.0.5",
+    "clean-webpack-plugin": "~2.0.2",
+    "css-loader": "~2.1.1",
+    "html-webpack-plugin": "~3.2.0",
+    "style-loader": "~0.23.1",
+    "webpack": "~4.30.0",
+    "webpack-cli": "~3.3.2",
+    "webpack-dev-server": "~3.3.1"
+  },
+  "dependencies": {
+    "@hot-loader/react-dom": "~16.8.6",
+    "react": "~16.8.6",
+    "react-dom": "~16.8.6",
+    "react-hot-loader": "~4.8.4"
+  }
 }
