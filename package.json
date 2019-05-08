@@ -1,11 +1,15 @@
 {
   "name": "intro-to-webpack",
-  "version": "0.0.1",
+  "version": "4.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "next": "git checkout 1/code"
   },
   "author": "Tanner B. Hess Webber <tb@hesswebber.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "~7.4.4",
+    "@babel/preset-react": "~7.0.0"
+  }
 }
