@@ -1,11 +1,21 @@
 {
   "name": "intro-to-webpack",
-  "version": "0.0.1",
+  "version": "4.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "next": "git checkout 1/code"
+    "build": "webpack",
+    "next": "git checkout 3/code",
+    "this": "git checkout 2/code",
+    "prev": "git checkout 1/code"
   },
   "author": "Tanner B. Hess Webber <tb@hesswebber.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "~7.4.4",
+    "@babel/preset-react": "~7.0.0",
+    "clean-webpack-plugin": "~2.0.2",
+    "webpack": "~4.30.0",
+    "webpack-cli": "~3.3.2"
+  }
 }
