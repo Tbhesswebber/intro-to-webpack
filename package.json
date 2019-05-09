@@ -4,8 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "next": "git checkout 1/code"
+    "build": "webpack --env.mode production",
+    "build:dev": "webpack-dev-server --env.mode development --env.presets dev-server,analyze-bundle --open --hot",
+    "next": "echo \"Oh, no!  You've reached the end!\"",
+    "this": "git checkout 10/code",
+    "prev": "git checkout 9/code"
   },
   "author": "Tanner B. Hess Webber <tb@hesswebber.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "~7.4.4",
+    "babel-loader": "~8.0.5",
+    "css-loader": "~2.1.1",
+    "file-loader": "~3.0.1",
+    "html-webpack-plugin": "~3.2.0",
+    "style-loader": "~0.23.1",
+    "webpack": "~4.30.0",
+    "webpack-bundle-analyzer": "~3.3.2",
+    "webpack-cli": "~3.3.2",
+    "webpack-dev-server": "~3.3.1",
+    "webpack-merge": "~4.2.1"
+  }
 }
